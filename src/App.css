@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.App {
+    padding: 1rem .5rem;
+}
+
+.App h1 {
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: .5rem 4rem;
+}
+
+@media screen and (max-width:950px) {
+    .gallery {
+        padding: .5rem 2rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .gallery {
+        padding: .5rem 0;
+    }
+
+    .footer .icons {
+        margin: 5px;
+    }
+}
+
+.card {
+    height: 400px;
+    width: 350px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.card .img {
+    width: 100%;
+    height: 55%;
+    overflow: hidden;
+}
+
+.card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .text {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px;
+}
+
+
+.card button {
+    padding: 10px 15px;
+    background: rgb(170, 0, 255);
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+}
+
+
+.search {
+    margin: 20px 0 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.search form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.search form input {
+    width: 170px;
+    border-radius: 3px;
+    border: 2px solid black;
+    outline: none;
+    padding: 7px 10px;
+}
+
+.search form button {
+    background: rgb(170, 0, 255);
+    padding: 7px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.search form button:hover {
+    background: rgb(146, 5, 216);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.image .img {
+    height: 75%;
+    width: 100%;
+}
+
+.image .img img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.image .text {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.image .text button {
+    padding: 10px 15px;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 5px 10px rgb(171, 171, 171);
+}
+
+
+.footer {
+    margin-top: 30px;
+    font-size: .9rem;
+    background: #cccccc;
+    width: 100vw;
+    padding: 5px 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer .text {
+    text-align: center;
+}
+
+.footer .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+.footer .icons a {
+    color: rgb(0, 0, 0);
+}
+
+.footer .icons a:hover {
+    color: rgb(255, 0, 68);
+}
