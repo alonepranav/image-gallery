@@ -8,21 +8,19 @@ import Footer from "./Footer";
 export default function App() {
   const [data, setData] = useState([]);
   return (
-    <>
-      <div className="Ap">
-        <BrowserRouter>
-          <Routes>
-            <Route
-              path="/" element={<Home {...{ photos: data, setPhotos: setData }} />}
-            />
-            <Route
-              path="/image/:id"
-              element={<Image photos={data} />}
-            />
-          </Routes>
-        </BrowserRouter>
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/" element={<Home {...{ photos: data, setPhotos: setData }} />}
+          />
+          <Route
+            path="/image/:id"
+            element={<Image photos={data} />}
+          />
+        </Routes>
         <Footer />
-      </div>
-    </>
+      </BrowserRouter>
+    </div>
   );
 }

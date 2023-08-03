@@ -158,13 +158,13 @@ html {
 
 .footer {
     margin-top: 30px;
-    font-size: .9rem;
-    background: #cccccc;
+    font-size: 1.4rem;
     width: 100vw;
     padding: 5px 20px;
     display: flex;
     gap: 10px;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
 }
