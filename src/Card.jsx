@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Card = ({ largeImageURL, user, views, downloads, likes, id, tags }) => {
   return (
-    <div div className="card">
+    <div className="card">
       <div className="img">
         <Link to={`/image/${id}`}>
           <img src={largeImageURL} alt={tags} />

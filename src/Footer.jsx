@@ -6,16 +6,16 @@ export default function Footer() {
     <div className="footer">
       <div className="text">
         Made by{" "}
-        <a href="https://github.com/pranavshilavane" target="_blank">
+        <a href="https://pranavshilavane.netlify.app" rel="noopener noreferrer" target="_blank">
           Pranav
         </a>{" "}
         with ReactJS and CSS
       </div>
       <div className="icons">
-        <a href="https://www.instagram.com/pranavshilavane">
+        <a href="https://www.instagram.com/pranavshilavane" rel="noopener noreferrer" target="_blank">
           <AiFillInstagram />
         </a>
-        <a href="https://www.github.com/pranavshilavane">
+        <a href="https://www.github.com/pranavshilavane" rel="noopener noreferrer" target="_blank">
           <AiFillGithub />
         </a>
       </div>

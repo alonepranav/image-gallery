@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import "./App.css";
 import Card from "./Card";
 
@@ -10,16 +10,16 @@ function Home({ photos, setPhotos }) {
   const [image, setImage] = useState("");
   const [loading, setLoading] = useState(true);
 
-  const fetchData = async (query = "") => {
+  const fetchData = useCallback(async (query = "") => {
     const res = await fetch(get_Link(query));
     const datA = await res.json();
     if (datA) setLoading(false);
     setPhotos(datA.hits);
-  };
+  }, [setPhotos]);
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [fetchData]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
