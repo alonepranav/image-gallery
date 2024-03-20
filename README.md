@@ -4,6 +4,8 @@
 
 ### This app has the functionality to randomly load images, we can also search for particular image. Image can be previewed also.
 
+> **I've used my Pixabay API Key please replace with yours.** 
+
 ### Live Project Link : [ view here ](https://image-gallery-react.onrender.com/)
 
 <br/>

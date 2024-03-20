@@ -3,7 +3,7 @@ import "./App.css";
 import Card from "./Card";
 
 const get_Link = (query = "") => {
-  return `https://pixabay.com/api/?key=36084451-16dce68c59df28941565a6f2c&q=${query}&image_type=photo`;
+  return `https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_API_KEY}&q=${query}&image_type=photo`;
 };
 
 function Home({ photos, setPhotos }) {
